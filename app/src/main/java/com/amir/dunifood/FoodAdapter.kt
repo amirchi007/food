@@ -49,7 +49,7 @@ class FoodAdapter(private val data: ArrayList<Food>, private val foodEvents: Foo
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): FoodViewHolder {
-        // ویو مارو هلد  میکنه به اصطلاح ذخیره میکنه و میگیره داره (داره تعداد رو از اینیر کلاس بالا میگیره)
+        // ویو مارو هلد  میکنه به اصطلاح ذخیره میکنه و   داره (داره تعداد رو از اینیر کلاس بالا میگیره)
         val binding = ItemFoodBinding.inflate(LayoutInflater.from(parent.context), parent , false)
         return FoodViewHolder(binding)
     }

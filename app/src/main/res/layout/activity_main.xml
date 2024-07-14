@@ -60,6 +60,7 @@
     </LinearLayout>
 
     <androidx.recyclerview.widget.RecyclerView
+        android:layoutAnimation="@anim/recycler"
         android:id="@+id/recyclerMain"
         android:layout_width="match_parent"
         android:layout_height="600dp"
