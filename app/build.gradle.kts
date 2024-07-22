@@ -1,6 +1,9 @@
+import kotlin.script.experimental.jvm.util.classpathFromClass
+
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.jetbrains.kotlin.android)
+    alias(libs.plugins.kotlin.kapt)
 }
 
 android {
@@ -10,6 +13,7 @@ android {
     buildFeatures {
         viewBinding = true
     }
+
     defaultConfig {
         applicationId = "com.amir.dunifood"
         minSdk = 24
@@ -29,18 +33,20 @@ android {
             )
         }
     }
+
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_1_8
         targetCompatibility = JavaVersion.VERSION_1_8
     }
+
     kotlinOptions {
         jvmTarget = "1.8"
     }
 }
 
 dependencies {
-    implementation ("com.github.bumptech.glide:glide:4.16.0")
-    annotationProcessor ("com.github.bumptech.glide:compiler:4.12.0")
+    implementation(libs.glide)
+
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
@@ -50,4 +56,10 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+
+    // Room dependencies
+    implementation(libs.androidx.room.runtime.v261)
+    kapt(libs.androidx.room.compiler.v261)
+
+
 }

@@ -27,6 +27,14 @@
                 android:layout_gravity="end|center_vertical"
                 app:srcCompat="@drawable/ic_add"
                 app:tint="@color/white" />
+            <ImageView
+                android:layout_marginEnd="40dp"
+                android:id="@+id/btn_remove_all_food"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end|center_vertical"
+                app:srcCompat="@drawable/ic_clear_all"
+                app:tint="@color/white" />
 
             <TextView
                 android:id="@+id/textView"
