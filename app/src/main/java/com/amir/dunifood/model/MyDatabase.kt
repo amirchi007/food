@@ -1,4 +1,4 @@
-package com.amir.dunifood.room
+package com.amir.dunifood.model
 
 import android.content.Context
 import androidx.room.Database

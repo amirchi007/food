@@ -1,11 +1,11 @@
-package com.amir.dunifood
+package com.amir.dunifood.mainScreen
 
 import android.annotation.SuppressLint
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.amir.dunifood.databinding.ItemFoodBinding
-import com.amir.dunifood.room.Food
+import com.amir.dunifood.model.Food
 import com.bumptech.glide.Glide
 import com.bumptech.glide.load.resource.bitmap.RoundedCorners
 
